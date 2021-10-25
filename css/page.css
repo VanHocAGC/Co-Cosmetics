@@ -1,0 +1,244 @@
+/*category*/
+
+a {
+    text-decoration: none;
+}
+
+.home a {
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.home a:hover {
+    color: #437349;
+}
+
+.mg-left {
+    float: right;
+    margin-right: -30px;
+}
+
+.page-box {
+    padding-top: 18%;
+}
+
+.home__header {
+    display: flex;
+    padding: 15px 0;
+    border-radius: 0;
+    text-align: left;
+}
+
+.accordion-menu_children label a {
+    text-decoration: none;
+}
+
+.accordion-menu_children label {
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif !important;
+}
+
+.accordion-menu_children label a:hover {
+    color: #437349;
+}
+
+.face-make {
+    margin-left: 3%;
+}
+
+.face-make span {
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif !important;
+    color: #437349;
+}
+
+.left-content {
+    margin-bottom: 25px;
+}
+
+.category {
+    padding-bottom: 10%;
+    margin-top: 20px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.xemthem {
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif !important;
+    color: #000000;
+    font-weight: 400;
+    line-height: 1.7;
+    text-decoration: none !important;
+    float: left;
+    width: 100%;
+    margin: 20px 0 30px 0;
+    display: flex;
+}
+
+.xemthem:hover {
+    color: #437349;
+}
+
+.category-box__title {
+    height: 40px;
+    width: 100%;
+    font-size: 24px;
+    font-family: "Montserrat", sans-serif;
+    line-height: 40px;
+    margin: 0;
+    text-transform: none;
+    font-weight: 700;
+    display: inline-block;
+    padding-left: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.category-box__title:hover {
+    cursor: pointer;
+    color: #437349;
+}
+
+.text-check {
+    position: relative;
+    padding-left: 15px;
+    cursor: pointer;
+    color: #7b8395;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.text-check:hover {
+    color: #437349;
+}
+
+.check-brand {
+    margin-top: 35px;
+}
+
+.bran--check-box span input {
+    width: 15px;
+    height: 15px;
+    color: #437349;
+    background-color: blanchedalmond;
+}
+
+.brand-group {
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.brand-group ul {
+    max-height: 235px;
+    overflow-y: auto;
+    padding: 0px;
+}
+
+.prioritized {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 80px;
+}
+
+.list-top {
+    margin-left: 10px;
+    display: flex;
+}
+
+.list-top div {
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.list-top div label {
+    font-size: 15px;
+    position: relative;
+    color: #707070;
+}
+
+.list-top div input:hover {
+    background-color: #437349;
+}
+
+.accordion-menu input[type=checkbox] {
+    /* cái này để hide cái checkbox */
+    position: absolute;
+    opacity: 0;
+}
+
+.accordion-menu label,
+.accordion-menu a,
+.accordion-menu i {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    padding-left: 10px;
+}
+
+.accordion-menu ul {
+    display: none;
+}
+
+.accordion-menu input[type=checkbox]:checked+label+ul,
+.accordion-menu input[type=checkbox]:checked+label:nth-of-type(n)+ul {
+    display: block;
+}
+
+.accordion-menu_children .lv2 {
+    padding-left: 25px;
+    margin-top: -5px;
+}
+
+.accordion-menu_children ul li {
+    padding-top: 5px;
+}
+
+.product-lv3 {
+    padding-left: 40px;
+}
+
+.accordion-menu_children ul li a {
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif !important;
+    text-decoration: none;
+}
+
+.accordion-menu_children ul li a:hover {
+    color: #437349;
+}
+
+.uutien h3 {
+    font-size: 14px;
+    font-weight: 400;
+    float: left;
+    margin: 0;
+    margin-top: 2px;
+    color: #707070;
+}
+
+
+/*scoll*/
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+ ::-webkit-scrollbar-track {
+    border-radius: 5px;
+}
+
+ ::-webkit-scrollbar-thumb {
+    background: #e9edf5;
+    border-radius: 5px;
+}
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: #e9edf5;
+}

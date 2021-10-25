@@ -1,0 +1,131 @@
+/* comman */
+.mg-b-50 {
+    margin-bottom: 50px;
+}
+
+
+.login-box {
+    padding-top: 256px;
+}
+
+.login-header {
+    /* display: flex; */
+    margin: 0;
+    padding: 15px 0;
+    border-radius: 0;
+    text-align: left;
+    cursor: pointer;
+}
+
+.home span, .account span {
+    font-size: 14px;
+}
+
+.home span {
+    cursor: pointer;
+}
+
+.home span:hover {
+    color: #000;
+}
+
+
+.account span {
+    color: #437349;
+}
+
+.home a {
+    text-decoration: none;
+    margin-right: 50px;
+    margin-left: 12px;
+}
+
+.login-box li {
+    display: inline;
+}
+
+
+/* form đăng nhập */ 
+.title-head {
+    margin-left: 10px;
+}
+
+.login-form h1 {
+    font-size: 39px;
+}
+
+.page-login .form-signup .form-group input {
+    height: 50px;
+    padding: 0 20px;
+    color: #636363;
+    border-radius: 30px !important;
+    border-color: #ebebeb;
+    box-shadow: none;
+    margin-bottom: 10px !important;
+}
+
+.form-group .form-control {
+    display: block;
+    width: 100%;
+    min-height: 40px;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.5;
+    color: #000000;
+    background-color: #fff;
+    background-image: none;
+    margin-bottom: 15px;
+    border: 1px solid #EAEBF3;
+    box-shadow: none;
+    border-radius: 30px;
+}
+
+#login p, #recover-password p {
+    font-size: 14px;
+}
+
+.title-head {
+    margin-bottom: 15px;
+}
+
+.form-signup.clearfix {
+    margin-top: 30px;
+}
+label {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.btn.btn-primary, 
+input.btn-primary[type="submit"] {
+    padding: 12px 25px;
+    background: #437349;
+    color: #fff;
+    border-radius: 30px;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    border: 1px solid transparent;
+}
+
+.btn.btn-primary:hover, 
+input.btn-primary[type="submit"]:hover
+{
+    background-color: #fff;
+    color: #437349;
+    border: 1px solid #437349;
+}
+
+a.btn-link-style.btn-register {
+    font-size: 14px;
+    margin-left: 20px;
+    text-decoration: underline;
+}
+
+.pull-xs-left {
+    margin-bottom: 50px;
+}
+
+span {
+    font-size: 14px;
+}

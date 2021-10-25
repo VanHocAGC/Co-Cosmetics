@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tài Khoản Cỏ-Cosmetics & Skincare chuỗi cửa hàng mỹ phẩm chính hãng</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/slick-theme.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+</head>
+
+<body>
+
+    <section class="header-container">
+        <!-- header -->
+        <div class="container">
+            <div class="row header_topbar">
+                <ul class="col-half header_topbar_left ">
+                    <li class="mg-right">
+                        <span class="header_topbar_icon_style_base"><i class="fas fa-phone-volume"></i></span><a class="hai01" href="tel:0929398899‬-0965528998">0929398899‬-0965528998</a>
+                    </li>
+                    <li class="hidden-xs">
+                        <span class="header_topbar_icon_style_base">
+                            <i class="far fa-envelope"></i>
+                        </span>
+                        <a class="hai01" href="mailto:corcosmetics.skincare@gmail.com">corcosmetics.skincare@gmail.com</a>
+                    </li>
+                </ul>
+                <div class=" col-half header_topbar_right">
+                    <div class=" topbar_right">
+                        <div class="list-inline f-right">
+                            <ul class="ul-accounts">
+                                <li class="hidden-xs">
+                                    <a rel="nofollow" href="/pages/kiem-tra-don-hang" title="Kiểm tra đơn hàng">
+                                        <span class="header_topbar_icon_style_base"><i class="fas fa-clipboard-list"></i></span>Kiểm tra đơn hàng
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mid_header">
+            <div class="container mid_header_content">
+                <div class="mid_header_logo">
+                    <img src="./images/logo.png" alt="">
+                </div>
+                <!-- form input -->
+                <div class="mid_header_form">
+                    <div class="mid_header_form_layout">
+                        <form action="/search" method="get" class="input-group search-bar">
+                            <input type="hidden" name="type" value="product">
+                            <input type="search" value="" placeholder="Tìm kiếm sản phẩm ..." class="input_serach_cs input-group-field st-default-search-input search-text">
+                            <span class="input-group-btn">
+                                <button type="submit" class="btn icon-fallback-text">
+                                    <span class="fas fa-search"></span> 
+                                </button>
+                            </span>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- cart and user -->
+                <div class="mid_header_user f-right">
+                    <ul class="mid_header_user_account">
+                        <li class="mid_header_user_accountlogin">
+                            <a href="#">   
+                                <img src="./images/bussiness-man.png" alt="Tạo tài khoản &amp; Đăng nhập">                            
+                            </a>
+                            <ul class="mid_header_user_account_box">
+                                <li class="signin"><a href="./login.html">Đăng nhập</a></li>
+                                <li class="register"><a href="./resgister.html">Đăng ký</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                
+
+                    <div class="mid_header_user_cart">
+                        <a class="img_hover_cart" href="./cart.html" title="Giỏ hàng">
+                            <div class="icon_hotline">
+                                <img src="./images/cart.png" alt="Cỏ Cosmetics &amp; Skincare chuỗi cửa hàng mỹ phẩm chính hãng">
+                                <span class="mid_header_user_cart_quantity">0</span>
+                            </div>
+                        </a>
+                        <div class="mid_header_user_cart_notification">					
+                            <div class="notification">
+                                <p>Không có sản phẩm nào trong giỏ hàng.</p>
+                            </div>
+                        </div>
+                    </div>	     
+                </div>
+            </div>
+        </div>
+        <div class="wrap_header">
+            <div class="container">
+              <ul class="wrap_header_items">
+                <li><a href="./index.html">Trang Chủ </a></li>
+                <li>
+                  <a
+                    id="make-up-5"
+                    onclick="showProductList(this)"
+                    href="./page.html"
+                    >Trang Điểm<i class="fas fa-caret-down mg-left"></i
+                  ></a>
+                  <div class="wrap_header_tab_makeup">
+                    <div class="wrap_header_tab_column">
+                      <ul class="wrap_header_tab_column_1">
+                        <a
+                          id="face-make-up"
+                          onclick="showProductList(this)"
+                          href="./page.html"
+                          class="text-lv2"
+                        >
+                          <h2 class="text-lv2">TRANG ĐIỂM MẶT</h2>
+                        </a>
+                        <li>
+                          <a
+                            id="cushion-1"
+                            onclick="showProductList(this)"
+                            href="./page.html"
+                            >Cushion - Kem nền</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            id="che-khuyet-diem"
+                            onclick="showProductList(this)"
+                            href="./page.html"
+                            >Che khuyết điểm</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            id="phan-phu-phan-nen"
+                            onclick="showProductList(this)"
+                            href="./page.html"
+                            >Phấn phủ - Phấn nền</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            id="ma-hong"
+                            onclick="showProductList(this)"
+                            href="./page.html"
+                            >Má hồng</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            id="tao-khoi-highlighter"
+                            onclick="showProductList(this)"
+                            href="./page.html"
+                            >Tạo khối</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            id="xit-khoang-nen"
+                            onclick="showProductList(this)"
+                            href="./page.html"
+                            >Xịt khoáng nền</a
+                          >
+                        </li>
+                      </ul>
+                      <ul class="wrap_header_tab_column_2">
+                        <a
+                          id="moi"
+                          onclick="showProductList(this)"
+                          href="./page.html"
+                        >
+                          <h2 class="text-lv2">MÔI</h2>
+                        </a>
+                        <li>
+                          <a
+                            id="son-moi"
+                            onclick="showProductList(this)"
+                            href="./page.html"
+                            >Son môi</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            id="son-duong"
+                            onclick="showProductList(this)"
+                            href="./page.html"
+                            >Son dưỡng</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            id="mat-na-moi"
+                            onclick="showProductList(this)"
+                            href="./page.html"
+                            >Mặt nạ môi</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            id="tay-te-bao-chet-moi"
+                            onclick="showProductList(this)"
+                            href="./page.html"
+                            >Tẩy tế bào chết môi</a
+                          >
+                        </li>
+                      </ul>
+                      <ul class="wrap_header_tab_column_3">
+                        <a
+                          id="mat"
+                          onclick="showProductList(this)"
+                          href="./page.html"
+                        >
+                          <h2 class="text-lv2">MẮT</h2>
+                        </a>
+                        <li>
+                          <a
+                            id="eyeliner-ke-mat"
+                            onclick="showProductList(this)"
+                            href="./page.html"
+                            >Eyeliner - Kẻ mắt</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            id="mascara"
+                            onclick="showProductList(this)"
+                            href="./page.html"
+                            >Mascara</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            id="ke-may"
+                            onclick="showProductList(this)"
+                            href="./page.html"
+                            >Kẻ mày</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            id="phan-mat"
+                            onclick="showProductList(this)"
+                            href="./page.html"
+                            >Phấn mắt</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a
+                    id="cham-soc-da"
+                    onclick="showProductList(this)"
+                    href="./page.html"
+                    >Chăm Sóc Da<i class="fas fa-caret-down mg-left"></i
+                  ></a>
+                  <div class="wrap_header_tab_skin">
+                    <div class="wrap_header_tab_column">
+                      <ul class="wrap_header_tab_column_1">
+                        <a
+                          id="lam-sach-tay-te-bao-chet"
+                          onclick="showProductList(this)"
+                          href="./page.html"
+                        >
+                          <h2 class="text-lv2">LÀM SẠCH - TẨY TẾ BÀO CHẾT</h2>
+                        </a>
+                        <li>
+                          <a
+                            id="sua-rua-mat-1"
+                            onclick="showProductList(this)"
+                            href="./page.html"
+                            >Sữa rửa mặt</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            id="tay-te-bao-chet"
+                            onclick="showProductList(this)"
+                            href="./page.html"
+                            >Tẩy tế bào chết mặt</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            id="tay-trang"
+                            onclick="showProductList(this)"
+                            href="./page.html"
+                            >Tẩy trang</a
+                          >
+                        </li>
+                      </ul>
+                      <ul class="wrap_header_tab_column_2">
+                        <a
+                          id="mask-mat-na-1"
+                          onclick="showProductList(this)"
+                          href="./page.html"
+                        >
+                          <h2 class="text-lv2">MASK - MĂT NẠ</h2>
+                        </a>
+                        <li>
+                          <a
+                            id="mat-na-giay"
+                            onclick="showProductList(this)"
+                            href="./page.html"
+                            >Mặt nạ giấy</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            id="mat-na-dat-set"
+                            onclick="showProductList(this)"
+                            href="./page.html"
+                            >Mặt nạ đất sét</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            id="mat-na-moi"
+                            onclick="showProductList(this)"
+                            href="./page.html"
+                            >Mặt nạ môi</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            id="mat-na-lot-mun"
+                            onclick="showProductList(this)"
+                            href="./page.html"
+                            >Mặt nạ lột</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            id="mat-na-mat"
+                            onclick="showProductList(this)"
+                            href="./page.html"
+                            >Mặt nạ mắt</a
+                          >
+                        </li>
+                      </ul>
+                      <ul class="wrap_header_tab_column_2">
+                        <a
+                          id="duong-da"
+                          onclick="showProductList(this)"
+                          href="./page.html"
+                        >
+                          <h2 class="text-lv2">DƯỠNG DA</h2>
+                        </a>
+                        <li>
+                          <a
+                            id="kem-duong-da"
+                            onclick="showProductList(this)"
+                            href="./page.html"
+                            >Kem dưỡng da</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            id="toner-nuoc-can-bang"
+                            onclick="showProductList(this)"
+                            href="./page.html"
+                            >Toner - Essence - Lotion</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            id="essence-serum-ampole"
+                            onclick="showProductList(this)"
+                            href="./page.html"
+                            >Serum - Ampole - Đặc trị</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            id="kem-chong-nang"
+                            onclick="showProductList(this)"
+                            href="./page.html"
+                            >Kem chống nắng</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            id="duong-vung-mat"
+                            onclick="showProductList(this)"
+                            href="./page.html"
+                            >Dưỡng vùng mắt</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            id="bo-duong-da"
+                            onclick="showProductList(this)"
+                            href="./page.html"
+                            >Bộ dưỡng da</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a id="body" onclick="showProductList(this)" href="./page.html"
+                    >Chăm Sóc Cơ Thể<i class="fas fa-caret-down mg-left"></i
+                  ></a>
+                  <div class="wrap_header_tab_body">
+                    <div class="wrap_header_tab_column">
+                      <ul class="wrap_header_tab_column_1">
+                        <a
+                          id="duong-da-body"
+                          onclick="showProductList(this)"
+                          href="./page.html"
+                        >
+                          <h2 class="text-lv2">DƯỠNG DA BODY</h2>
+                        </a>
+                        <li>
+                          <a
+                            id="thuc-pham-chuc-nang"
+                            onclick="showProductList(this)"
+                            href="./page.html"
+                            >Thực phẩm chức năng</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            id="duong-the"
+                            onclick="showProductList(this)"
+                            href="./page.html"
+                            >Dưỡng thể</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            id="sua-tam"
+                            onclick="showProductList(this)"
+                            href="./page.html"
+                            >Sữa tắm</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            id="khu-mui"
+                            onclick="showProductList(this)"
+                            href="./page.html"
+                            >Khử mùi</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            id="cham-soc-rang-mieng"
+                            onclick="showProductList(this)"
+                            href="./page.html"
+                            >Chăm sóc răng miệng</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            id="tay-te-bao-chet-body"
+                            onclick="showProductList(this)"
+                            href="./page.html"
+                            >Tẩy tế bào chết body</a
+                          >
+                        </li>
+                      </ul>
+                      <ul class="wrap_header_tab_column_2">
+                        <a
+                          id="cham-soc-toc"
+                          onclick="showProductList(this)"
+                          href="./page.html"
+                        >
+                          <h2 class="text-lv2">CHĂM SÓC TÓC</h2>
+                        </a>
+                        <li>
+                          <a
+                            id="dau-goi-xa"
+                            onclick="showProductList(this)"
+                            href="./page.html"
+                            >Dầu gội, xả</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            id="duong-toc-1"
+                            onclick="showProductList(this)"
+                            href="./page.html"
+                            >Dưỡng tóc</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a
+                    id="phu-kien"
+                    onclick="showProductList(this)"
+                    href="./page.html"
+                    >Phụ Kiện<i class="fas fa-caret-down mg-left"></i
+                  ></a>
+                  <div class="wrap_header_tab_accessory">
+                    <div class="wrap_header_tab_column">
+                      <ul class="wrap_header_tab_column_1">
+                        <a
+                          id="phu-kien-makeup"
+                          onclick="showProductList(this)"
+                          href="./page.html"
+                        >
+                          <h2 class="text-lv2">PHỤ KIỆN MAKEUP</h2>
+                        </a>
+                        <li>
+                          <a
+                            id="co-trang-diem"
+                            onclick="showProductList(this)"
+                            href="./page.html"
+                            >Cọ trang điểm</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            id="phu-kien-mi"
+                            onclick="showProductList(this)"
+                            href="./page.html"
+                            >Phụ kiện mi</a
+                          >
+                        </li>
+                      </ul>
+                      <ul class="wrap_header_tab_column_2">
+                        <a
+                          id="phu-kien-ca-nhan"
+                          onclick="showProductList(this)"
+                          href="./page.html"
+                        >
+                          <h2 class="text-lv2">PHỤ KIỆN CÁ NHÂN</h2>
+                        </a>
+                        <li>
+                          <a
+                            id="phu-kien-phong-tam"
+                            onclick="showProductList(this)"
+                            href="./page.html"
+                            >Phụ kiện phòng tắm</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            id="phu-kien-ca-nhan-1"
+                            onclick="showProductList(this)"
+                            href="./page.html"
+                            >Phụ kiện cá nhân</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a
+                    id="cho-nam"
+                    onclick="showProductList(this)"
+                    href="./page.html"
+                    >Cho Nam</a
+                  >
+                </li>
+                <li>
+                  <a
+                    id="nuoc-hoa-1"
+                    onclick="showProductList(this)"
+                    href="./page.html"
+                    >Nước Hoa</a
+                  >
+                </li>
+                <li>
+                  <a
+                    id="thich-la-tang"
+                    onclick="showProductList(this)"
+                    href="./page.html"
+                    >Săn Quà</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+    </section>
+
+    <!-- login -->
+    <section class="login-box">
+        <div class="container">
+                <div class="col-xs-12 text-left mg-bottom-35">
+                    <ul class="login-header">
+                        <li class="home">
+                            <a href="" class="">
+                                <span>Trang chủ</span>
+                            </a>
+                        </li>
+                        <li class="account"><span>Tạo Tài khoản</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- form đăng nhập -->
+    <div class="container">
+        <h1 class="title-head">Tài khoản</h1>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="page-login margin-bottom-30">
+                    <div id="login">
+
+                        <span>
+                            Nếu bạn đã có tài khoản, đăng nhập tại đây.
+                        </span>
+                        <form accept-charset="UTF-8" action="/account/login" id="customer_login" method="post">
+                        <input name="form_type" type="hidden" value="customer_login">
+                        <input name="utf8" type="hidden" value="✓">
+
+                        <div class="form-signup">
+                            
+                        </div>
+
+
+                        <div class="form-signup clearfix">
+                            <fieldset class="form-group">
+                                <label>Email: </label>
+                                <input type="email" class="form-control form-control-lg" value="" name="customer[email]" id="customer_email" placeholder="Email">
+                            </fieldset>
+                            <fieldset class="form-group">
+                                <label>Mật khẩu: </label>
+                                <input type="password" class="form-control form-control-lg" value="" name="customer[password]" id="customer_password" placeholder="Mật khẩu">
+                            </fieldset>
+
+                            <div class="pull-xs-left" style="margin-top: 25px;">
+                                <input class="btn btn-primary" type="submit" value="Đăng nhập">
+                                <a href="/account/register" class="btn-link-style btn-register" style="margin-left: 20px;text-decoration: underline; ">Đăng ký</a>
+                            </div>
+                        </div>
+                        
+                    <input id="d89c47cd759d4bdfb61b1b241a47a05a" name="g-recaptcha-response" type="hidden" value="03AGdBq24FgyDgE4Sq51YKdxSC2YMvk9RDcT-DL7YT0q5Rx3sBAePwlCFZKGmNEmNHi4pDPLWkbJai0Ji4W-nSwpBTbUkWFxBariL4DFSrrQsKDBFXcNwSxaELPfvEEzLS5hHlEX0C9LjY5Y7hb4qq-ljHB8bGLVe0L8qTSxh4WFd42XYTnGqgxM8VzObWe8MyODfQ67g9a8iblAjE9GXsBB7YiyBQ4v_mnqezzSkRkkl1X7-Atf2SsuCJX_d0FyK5BrkNeSQKGsPeF1gDCjhkkazEJrWJJRYOVZPV-udgO3Esi0Wm6gtf0jLn9ZOS9Sq52szfDK2Pq4rbHqStLtTy9Xw1M6x7V5dy1zcqaYSsduj6VlFmd5Xht9QSTiMZLSpOM_FGxqV32X0BhohLWSgN8bgw0rTS506hoFcaKt3NXh48SQGgJJstD8E"><script src="https://www.google.com/recaptcha/api.js?render=6LdD18MUAAAAAHqKl3Avv8W-tREL6LangePxQLM-"></script><script>grecaptcha.ready(function() {grecaptcha.execute('6LdD18MUAAAAAHqKl3Avv8W-tREL6LangePxQLM-', {action: 'submit'}).then(function(token) {document.getElementById('d89c47cd759d4bdfb61b1b241a47a05a').value = token;});});</script></form>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div id="recover-password" class="form-signup">
+                    <span>
+                        Bạn quên mật khẩu? Nhập địa chỉ email để lấy lại mật khẩu qua email.
+                    </span>					
+                    <form accept-charset="UTF-8" action="/account/recover" method="post">
+                    <input name="form_type" type="hidden" value="recover_customer_password">
+                    <input name="utf8" type="hidden" value="✓">
+
+                    <div class="form-signup aaaaaaaa">
+                        
+                    </div>
+
+                    
+
+                    
+                    <div class="form-signup clearfix">
+                        <fieldset class="form-group">
+                            <label>Email: </label>
+                            <input type="email" class="form-control form-control-lg" value="" name="Email" id="recover-email" placeholder="Email">
+                        </fieldset>
+                    </div>
+                    <div class="action_bottom">
+                        <input class="btn btn-primary" style="margin-top: 25px;" type="submit" value="Lấy lại mật khẩu">
+
+                    </div>
+                    
+                    <input id="bd0a61d181c44ba9be6467a98577c74f" name="g-recaptcha-response" type="hidden" value="03AGdBq26nqz1qQnM9RjqVkWVj2S04IJFZi2MUHqNsbXoryYdB_Xl5dm8w2EXvrEU2icTPYDuOQUDxHRiPGx08cCTSksGWxhg0EGK5SJtevpvVj0tYuEkTBFlO0AcvqMUSFAQ0FDHBG3vaM_mj8m6fzuFgSiJTG3xpjOaS0bHl7rfp4O_Vn5uPzLcQr3Ig2AlzkWZhdCAle2iDL1BVfUsaEewIXKGqs0zR8V7AXqkTgd_gJni9dnYR8zipPDdPKWslsBDcjkbonwqwDhWHNpmstyp-73fsQ3P_3V3Pv_2rP6RpAUq2IiBqtalSJNaRrbeJ0c1mVt_oKGKosnZUNbNf3o8uNOF02myOBu_N8rh8lNe2hD_87fKrrlnD5k3Qi1xbI88VukXHSWfdsuP7MZPTbr56T827KHo-I3phHoxpR4drXyKHSEAbt5A"><script src="https://www.google.com/recaptcha/api.js?render=6LdD18MUAAAAAHqKl3Avv8W-tREL6LangePxQLM-"></script><script>grecaptcha.ready(function() {grecaptcha.execute('6LdD18MUAAAAAHqKl3Avv8W-tREL6LangePxQLM-', {action: 'submit'}).then(function(token) {document.getElementById('bd0a61d181c44ba9be6467a98577c74f').value = token;});});</script></form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <section class="footer">
+        <div class="footer__container row layout">
+            <div class="footer__container__first col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                <a href="#"><img src="./images/logo_footer.webp" alt="footer image"></a>
+                <h4>Cỏ Cosmetics & Skincare Đơn vị cung cấp mỹ phẩm chính hãng giá cạnh tranh</h4>
+                <p>Địa chỉ: 70 Nguyễn Thượng Hiền, phường 5, quận 3, Phường 05, Quận 3, Hồ Chí Minh, Vietnam</p>
+                <p>Hotline:<a href="#">092 939 8899‬ - 096 552 8998</a></p>
+                <p>Email:<a href="#">corcosmetics.skincare@gmail.com</a></p>
+            </div>
+            <div class="footer__container__second col-xs-12 col-sm-12 col-md-8 col-lg-8 row">
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 footer__container__second-item">
+                    <h4 class="footer__container__second-title">HỖ TRỢ KHÁCH HÀNG</h4>
+                    <ul>
+                        <li><a href="#">TÌM KIẾM</a></li>
+                        <li><a href="#">GIỚI THIỆU</a></li>
+                        <li><a href="#">HƯỚNG DẪN MUA BÁN</a></li>
+                        <li><a href="#">HƯỚNG DẪN THANH TOÁN</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 footer__container__second-item">
+                    <h4 class="footer__container__second-title">CHÍNH SÁCH</h4>
+                    <ul>
+                        <li><a href="#">CHÍNH SÁCH BẢO MẬT</a></li>
+                        <li><a href="#">CHÍNH SÁCH ĐỐI TRẢ</a></li>
+                        <li><a href="#">CHÍNH SÁCH VẪN CHUYỂN</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 footer__container__second-item">
+                    <h4 class="footer__container__second-title">KẾT NỐI VỚI CHÚNG TỐI</h4>
+                    <div class="footer__container__second-title-icon">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><img src="./images/icon_titok_no_border.webp" alt="icon"></a>
+                        <a href="#"><img src="./images/shopee.webp" alt="icon"></a>
+                        <a href="#"><img src="./images/lazada.webp" alt="icon"></a>
+                    </div>
+                    <div class="footer__contact">
+                        <div class="footer__contact-container">
+                            <a class="footer__contact-avatar" href="#">
+                                <img src="./images/164025537_2005724942899128_2491431695695913770_n.jpg" alt="fan page">
+                            </a>
+                            <div class="footer__contact-infor">
+                                <h4><a href="#">Cỏ Cosmetics & Skincare</a></h4>
+                                <h5>167K lượt thích</h5>
+                            </div>
+                        </div>
+                        <div class="footer__facebook">
+                            <a href="#">
+                                <i class="fab fa-facebook-square"></i> Thích trang
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer__pay">
+                        <h4>PHƯƠNG THỨC THANH TOÁN</h4>
+                        <a href="#"><img src="./images/i_payment.webp" alt="pay"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            <h6><i class="far fa-copyright"></i> Bản quyền thuộc về
+                <p>Cỏ Cosmetics & Skincare</p>|</h6>
+        </div>
+    </section>
+</body>
+</html>
